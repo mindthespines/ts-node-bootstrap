@@ -1,4 +1,6 @@
-export function sampleFunction(): string {
+const unusedThing = 'purple';
+
+export function sampleFunction() {
   const greeting = "Hello, TypeScript!";
   console.log(greeting);
   return greeting;
