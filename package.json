@@ -13,8 +13,8 @@
     "test:watch": "jest --watch --verbose",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write .",
-    "fix": "npm run lint:fix && npm run format"
+    "format:fix": "prettier --write .",
+    "fix": "npm run lint:fix && npm run format:fix"
   },
   "jest": {
     "preset": "ts-jest",

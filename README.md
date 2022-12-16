@@ -18,9 +18,9 @@ Includes some `npm` scripts to make getting started easier:
 
 `npm run lint:fix`: runs ESLint on the project, correcting fixable errors when possible
 
-`npm run format`: runs the Prettier formatter on the project
+`npm run format:fix`: runs the Prettier formatter on the project, writes formatting changes to files
 
-`npm run fix`: runs the above `lint:fix` command, followed by the `format` command; an all-in-one lint and format command. This will exit before formatting if there are unfixable errors detected by the linter, so watch for error output that you'll need to address.
+`npm run fix`: runs the above `format:fix` command, followed by `lint:fix`; an all-in-one lint and format command that writes its changes. There may still be unfixable linting errors, so keep an eye on this output.
 
 Documentation for options you may want to change:
 
