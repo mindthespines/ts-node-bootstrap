@@ -17,7 +17,8 @@
     "preset": "ts-jest",
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
-      "<rootDir>/dist"    ]
+      "<rootDir>/dist"
+    ]
   },
   "author": "spiney",
   "license": "MIT",
