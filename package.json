@@ -11,8 +11,10 @@
     "dev": "concurrently -c cyan,magenta \"npm:build:watch\" \"npm:start:watch\"",
     "test": "jest --verbose",
     "test:watch": "jest --watch --verbose",
-    "lint": "eslint . --fix",
-    "format": "prettier --write ."
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "fix": "npm run lint:fix && npm run format"
   },
   "jest": {
     "preset": "ts-jest",
