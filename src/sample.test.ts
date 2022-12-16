@@ -1,4 +1,5 @@
-import { sampleFunction } from ".";
+import { sampleFunction } from "./sample";
+
 describe("sample test", () => {
   beforeEach(() => {
     jest.clearAllMocks();

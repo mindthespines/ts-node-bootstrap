@@ -3,5 +3,3 @@ export function sampleFunction(): string {
   console.log(greeting);
   return greeting;
 }
-
-sampleFunction();
