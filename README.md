@@ -1,6 +1,10 @@
 # ts-node-bootstrap
 
-A template repository for Node TypeScript projects. Includes TypeScript, Jest for testing, and Prettier for formatting. Configures TS and Jest with sensible defaults; does not modify Prettier's preset formatting opinions.
+A template repository for Node TypeScript projects. Includes TypeScript, Jest for testing, Prettier for formatting, and ESLint for linting. Configures TS, Jest, and ESLint with sensible, basic defaults; does not modify Prettier's preset formatting opinions.
+
+For absolute beginners, don't fret! Breaking how-to-use-this-template down into simpler parts is a major goal of mine, it'll just take time. When that's available it'll be in [`docs/getting-started.md`](./docs/getting-started.md).
+
+I've included a workflow for GitHub Actions - if you're not using GitHub or are not interested in automated tests running when you push your code, feel free to delete the `.github` folder and its contents entirely! It's mostly for me to verify that this code works in an environment that isn't my own machine, but can also be a useful base if you plan on building your own actions pipelines.
 
 Includes some `npm` scripts to make getting started easier:
 
