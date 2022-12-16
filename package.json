@@ -1,0 +1,38 @@
+{
+  "name": "ts-node-bootstrap",
+  "version": "1.0.0",
+  "description": "A template repository for Node TypeScript projects",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch --preserveWatchOutput",
+    "start": "npm run build && node dist/index.js",
+    "start:watch": "nodemon dist/index.js",
+    "dev": "concurrently \"npm:build:watch\" \"npm:start:watch\"",
+    "test": "jest --verbose --runInBand --testLocationInResults --detectOpenHandles",
+    "test:watch": "jest --watch --verbose --runInBand --testLocationInResults --detectOpenHandles",
+    "format": "prettier --write ."
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "<rootDir>/dist",
+      "<rootDir>/node_modules"
+    ]
+  },
+  "author": "spiney",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "@types/node": "^18.11.15",
+    "concurrently": "^7.6.0",
+    "jest": "^29.3.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.1",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  }
+}
