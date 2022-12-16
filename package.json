@@ -8,7 +8,7 @@
     "build:watch": "tsc --watch --preserveWatchOutput",
     "start": "npm run build && node dist/index.js",
     "start:watch": "nodemon dist/index.js",
-    "dev": "concurrently \"npm:build:watch\" \"npm:start:watch\"",
+    "dev": "concurrently -c cyan,magenta \"npm:build:watch\" \"npm:start:watch\"",
     "test": "jest --verbose --runInBand --testLocationInResults --detectOpenHandles",
     "test:watch": "jest --watch --verbose --runInBand --testLocationInResults --detectOpenHandles",
     "format": "prettier --write ."
