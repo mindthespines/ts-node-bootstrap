@@ -2,7 +2,7 @@ name: Jest Tests
 
 on: [push]
 jobs:
-  build:
+  install-and-test:
     runs-on: ubuntu-latest
     container: node:latest
     steps:
