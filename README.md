@@ -8,7 +8,7 @@ I've included a workflow for GitHub Actions - if you're not using GitHub or are 
 
 Includes some `npm` scripts to make getting started easier:
 
-`npm run build`: runs the TypeScript compiler (`tsc`) on the `/src` directory and outputs JS files to the `/dist` folder
+`npm run build`: removes prior build from `/dist` folder, then runs the TypeScript compiler (`tsc`) on the `/src` directory and outputs JS files to the `/dist` folder
 
 `npm run start`: starts the app with an entry point of `dist/main.js` (it assumes the `/dist` folder has already been built)
 
