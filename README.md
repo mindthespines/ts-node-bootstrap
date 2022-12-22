@@ -10,9 +10,11 @@ Includes some `npm` scripts to make getting started easier:
 
 `npm run build`: runs the TypeScript compiler (`tsc`) on the `/src` directory and outputs JS files to the `/dist` folder
 
-`npm run start`: runs the above build script, then starts the app with an entry point of `dist/main.js` - does not rebuild or reload with changes (see below for a script that will track changes)
+`npm run start`: starts the app with an entry point of `dist/main.js` (it assumes the `/dist` folder has already been built)
 
-`npm run dev`: builds and starts the app, then watches for changes, rebuilds as-needed, and restarts the app when changes are detected
+`npm run dev`: builds and starts the app - does not rebuild or reload with changes (see below for a script that will track changes)
+
+`npm run dev:watch`: builds and starts the app, then watches for changes, rebuilds as-needed, and restarts the app when changes are detected
 
 `npm run test`: runs the test files in the project
 

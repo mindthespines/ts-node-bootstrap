@@ -6,9 +6,10 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch --preserveWatchOutput",
-    "start": "npm run build && node dist/main.js",
+    "start": "node dist/main.js",
     "start:watch": "nodemon dist/main.js",
-    "dev": "concurrently -c cyan,magenta \"npm:build:watch\" \"npm:start:watch\"",
+    "dev": "npm run build && npm run start",
+    "dev:watch": "concurrently -c cyan,magenta \"npm:build:watch\" \"npm:start:watch\"",
     "test": "jest --verbose",
     "test:watch": "jest --watch --verbose",
     "lint": "eslint .",
