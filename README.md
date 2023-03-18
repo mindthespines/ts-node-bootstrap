@@ -2,31 +2,26 @@
 
 A template repository for Node TypeScript projects. Includes TypeScript, Jest for testing, Prettier for formatting, and ESLint for linting. Configures TS, Jest, and ESLint with sensible, basic defaults; does not modify Prettier's preset formatting opinions.
 
-For absolute beginners, don't fret! Breaking how-to-use-this-template down into simpler parts is a major goal of mine, it'll just take time. When that's available it'll be in [`docs/getting-started.md`](./docs/getting-started.md).
+## Scripts
 
-I've included a workflow for GitHub Actions - if you're not using GitHub or are not interested in automated tests running when you push your code, feel free to delete the `.github` folder and its contents entirely! It's mostly for me to verify that this code works in an environment that isn't my own machine, but can also be a useful base if you plan on building your own actions pipelines.
+| Command              | Description                                                                                                                                                                                             |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npm run build`      | removes prior build from `/dist` folder, then runs the TypeScript compiler (`tsc`) on the `/src` directory and outputs JS files to the `/dist` folder                                                   |
+| `npm run start`      | starts the app with an entry point of `dist/main.js` (it assumes the `/dist` folder has already been built)                                                                                             |
+| `npm run dev`        | builds and starts the app - does not rebuild or reload with changes (see below for a script that will track changes)                                                                                    |
+| `npm run dev:watch`  | builds and starts the app, then watches for changes, rebuilds as-needed, and restarts the app when changes are detected                                                                                 |
+| `npm run test`       | runs the test files in the project                                                                                                                                                                      |
+| `npm run test:watch` | runs the test files in the project and watches for changes; reruns tests on changes                                                                                                                     |
+| `npm run lint`       | runs ESLint on the project, which will show a list of warnings and errors you may want or need to address; does not change any files                                                                    |
+| `npm run lint:fix`   | runs ESLint on the project, correcting fixable errors when possible                                                                                                                                     |
+| `npm run format:fix` | runs the Prettier formatter on the project, writes formatting changes to files                                                                                                                          |
+| `npm run fix`        | runs the above `format:fix` command, followed by `lint:fix`; an all-in-one lint and format command that writes its changes. There may still be unfixable linting errors, so keep an eye on this output. |
 
-Includes some `npm` scripts to make getting started easier:
+## Extra Bits
 
-`npm run build`: removes prior build from `/dist` folder, then runs the TypeScript compiler (`tsc`) on the `/src` directory and outputs JS files to the `/dist` folder
+Includes a GitHub Actions workflow to confirm the basics are working and some Dependabot configuation in the `.github` directory to try to keep this template up to date; you will likely want to delete or edit this directory to suit your own needs.
 
-`npm run start`: starts the app with an entry point of `dist/main.js` (it assumes the `/dist` folder has already been built)
-
-`npm run dev`: builds and starts the app - does not rebuild or reload with changes (see below for a script that will track changes)
-
-`npm run dev:watch`: builds and starts the app, then watches for changes, rebuilds as-needed, and restarts the app when changes are detected
-
-`npm run test`: runs the test files in the project
-
-`npm run test:watch`: runs the test files in the project and watches for changes; reruns tests on changes
-
-`npm run lint`: runs ESLint on the project, which will show a list of warnings and errors you may want or need to address; does not change any files
-
-`npm run lint:fix`: runs ESLint on the project, correcting fixable errors when possible
-
-`npm run format:fix`: runs the Prettier formatter on the project, writes formatting changes to files
-
-`npm run fix`: runs the above `format:fix` command, followed by `lint:fix`; an all-in-one lint and format command that writes its changes. There may still be unfixable linting errors, so keep an eye on this output.
+## Resources
 
 Documentation for options you may want to change:
 
