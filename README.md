@@ -1,6 +1,6 @@
 # ts-node-bootstrap
 
-A template repository for Node TypeScript projects. Includes TypeScript, Jest for testing, Prettier for formatting, and ESLint for linting. Configures TS, Jest, and ESLint with sensible, basic defaults; does not modify Prettier's preset formatting opinions.
+A template repository for Node TypeScript projects. Includes TypeScript, Jest for testing, Prettier for formatting, and ESLint for linting. Configures TS, Jest, and ESLint with sensible, basic defaults; does not modify Prettier's preset formatting opinions. Has been tested with Node 16, 18, and 20.
 
 ## Scripts
 
